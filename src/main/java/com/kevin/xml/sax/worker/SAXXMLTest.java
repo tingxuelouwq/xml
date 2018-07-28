@@ -1,4 +1,4 @@
-package com.kevin.xml.sax;
+package com.kevin.xml.sax.worker;
 
 import junit.framework.TestCase;
 import org.xml.sax.SAXException;

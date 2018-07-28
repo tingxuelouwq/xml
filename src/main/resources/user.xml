@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+    <user id="1">
+        <name>王琪</name>
+        <password>wangqi</password>
+    </user>
+    <user id="2">
+        <name>任帅</name>
+        <password>renshuai</password>
+    </user>
+    <user id="3">
+        <name>凯得佳</name>
+        <password>kaidejia</password>
+    </user>
+</users>
