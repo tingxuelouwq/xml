@@ -22,6 +22,7 @@ public class WebMain {
         digester.setValidating(false);
         // 3. 设置匹配模式和规则
         digester.addObjectCreate("web-app/servlet", ServeltBean.class);
+//        digester.addBeanPropertySetter("web-app/servlet/servlet-name", "servletName");
         digester.addCallMethod("web-app/servlet/servlet-name", "setServletName", 0);
         digester.addCallMethod("web-app/servlet/servlet-class", "setServletClass", 0);
         digester.addCallMethod("web-app/servlet/init-param", "addInitParam", 2);

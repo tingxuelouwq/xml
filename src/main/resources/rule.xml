@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE digester-rules
+        PUBLIC "-//Jakarta Apache //DTD digester-rules XML V1.0//EN"
+        "http://jakarta.apache.org/commons/digester/dtds/digester-rules.dtd">
+<digester-rules>
+    <!-- 遇到charts节点 -->
+    <pattern value="charts">
+        <!-- 创建ChartRegistry对象 -->
+        <object-create-rule classname="com.kevin.xml.digester.xml.ChartRegistry"/>
+        <!-- 遇到chart节点 -->
+        <pattern value="chart">
+            <!-- 创建ChartConfig对象 -->
+            <object-create-rule classname="com.kevin.xml.digester.xml.ChartConfig"/>
+            <!-- 设置属性 -->
+            <set-properties-rule/>
+            <bean-property-setter-rule pattern="legendVisible"/>
+            <bean-property-setter-rule pattern="type"/>
+            <bean-property-setter-rule pattern="width"/>
+            <bean-property-setter-rule pattern="description"/>
+            <!-- 调用父元素方法 -->
+            <set-next-rule methodname="addChart"/>
+        </pattern>
+    </pattern>
+</digester-rules>

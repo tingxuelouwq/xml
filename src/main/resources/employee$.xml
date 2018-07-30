@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<employee>
+    <firstName>Pi</firstName>
+    <lastName>Chen</lastName>
+    <address>
+        <type>${type}</type>
+        <city>HangZhou</city>
+        <state>2</state>
+    </address>
+</employee>
